@@ -2,43 +2,25 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #f7f7f7;
+    background-color: #eee;
     font-size: 12px;
+    font-family: Arial, Helvetica, sans-serif;
 }
-/* HEADER */
-
-.logo{
-    height: 70px;
-    width: 80px;
-    display: inline-block;
-    background-image: url(../img/Logo.png);
-    background-repeat: no-repeat;
-    background-size: 70px;
-    
-}
-
-.logo-text{
-    height: 70px;
-    width: 1000px;
-    display: inline-block;
-    line-height: 70px;
-    overflow: hidden;
-    
-}
-
-.text {
-    font-size: 55px;
-}
-/* // HEADER */
 
 /* MAIN */
 .main-container{
     width: 700px;
-    height: 500px;
+    height: 800px;
     margin-left: 250px;
     margin-right: 250px;
     overflow: hidden;
 }
+
+
+li :before {
+    content: \2713;
+}
+
 
 .add-container{
     width: 700px;
@@ -50,9 +32,13 @@
     border-bottom: 2px solid #f7f7f7;
 }
 
+button{
+    border: 0;
+}
+
 .add-task {
     font-size: 15px;
-    background-color: green;
+    background-color: rgb(60, 124, 243);
     border: 1 px solid;
     border-radius: 5px;
     padding: 5px;
@@ -61,11 +47,11 @@
 
 .add-section{
     font-size: 15px;
-    background-color: red;
-    border: 1 px solid;
+    background-color: #fff;
+    border:  1px solid #8b8282;
     border-radius: 5px;
     padding: 5px;
-    color: #fff;
+    color: #8b8282;
 }
 
 /* seconda parte main */
@@ -92,27 +78,56 @@ li {
 }
 
 .rettangolino{
-    font-size: 15px;
-    
+    font-size: 15px;    
     border: 1 px solid;
-    border-radius: 5px;
-    padding: 5px;
+    border-radius: 10px;
+    padding: 7px;
     color: white;
 }
 
 .rettangolino.verde{
-background-color: chartreuse;
+    background-color: chartreuse;
 }
 
 .rettangolino.blu{
-    background-color: rgb(100, 44, 255);
-    }
-
-.rettangolino.arancione{
-        background-color: rgb(240, 81, 8);
-        }
-
-.rettangolino.viola{
-     background-color: rgb(148, 18, 253);   
+    background-color: rgb(60, 124, 243);
 }
 
+.rettangolino.arancione{
+    background-color: rgb(240, 81, 8);
+}
+
+.rettangolino.viola{
+    background-color: rgb(139, 76, 190);   
+}
+
+
+
+
+.checked:before {
+    content: '\2713';
+    color: #2cc6ab;
+}
+
+.deleted:before {
+    content: '\2573';
+    color: #ff0000;
+    border-color: #ff0000;
+}
+/* HEADER */
+
+header {
+    background-color: white;
+    padding: 15px 30px;
+    margin-bottom: 50px;
+}
+header img{
+    vertical-align: middle;
+}
+.logo-text {
+    font-size: 32px;
+    font-weight: bold;
+    vertical-align: middle;
+}
+
+/* // HEADER */
